@@ -1,6 +1,7 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+<<<<<<< HEAD
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
@@ -51,3 +52,5 @@ MIRYOKU_X(GAME,   "Gaming")
 #define U_SYM    8
 #define U_FUN    9
 #define U_GAME   10
+=======
+>>>>>>> parent of 8b62a97 (Update custom_config.h)
