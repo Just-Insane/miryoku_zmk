@@ -4,11 +4,7 @@
 #pragma once
 
 #define MIRYOKU_TAPDELAY_TAP(CODE) \
-/ { \
-  macros { \
-    ZMK_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_release &kp CODE>;) \
-  }; \
-};
+U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_release &kp CODE>;)
 
 #define MIRYOKU_TAPDELAY_MT(CODE) \
 / { \
@@ -73,7 +69,7 @@ MIRYOKU_X(COMMA,) \
 MIRYOKU_X(DOT,) \
 MIRYOKU_X(SLASH,) \
 MIRYOKU_X(ESC,) \
-MIRYOKU_X(SPC,) \
+MIRYOKU_X(SPACE,) \
 MIRYOKU_X(TAB,) \
 MIRYOKU_X(RET,) \
 MIRYOKU_X(BSPC,) \
