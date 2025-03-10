@@ -1,4 +1,7 @@
 # Copyright 2023 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-outboard_modules=ergonautkb/ergonautkb-zmk-module/main
+outboard_repository=yumagulovrn/dao-zmk-config
+outboard_ref=main
+outboard_from=config/boards/arm/dao
+outboard_to=boards/arm/dao
