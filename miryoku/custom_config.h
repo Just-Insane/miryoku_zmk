@@ -1,18 +1,24 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define XXX &none
+#define MIRYOKU_KLUDGE_SOFT_OFF
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_CLIPBOARD_WIN
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
-#define MIRYOKU_KLUDGE_SUSPEND
+
+#define XXX &none
 
 // FPS friendly tap layer
 #define MIRYOKU_LAYER_GAME \
-&kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp NUM_4,         \
-&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
-&kp ESC,           &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp LBKT,          &kp COMMA,         &kp DOT,           &kp RBKT,         \
-U_NP,              U_NP,              &kp LCTRL,         &kp SPC,           &kp LALT,          U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
+&kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp LCTRL,         &kp Z,             &kp X,             &kp C,             &kp V,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo U_GAMENUM,     &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
+#define MIRYOKU_LAYER_GAMENUM \
+&kp ESC,           &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp T,             &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
+&kp LSHFT,         &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp G,             &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
+&kp LCTRL,         &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp B,             &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
+U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,             &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 // Direct custom layer access
 #define MIRYOKU_LAYOUTMAPPING_KYRIA(\
@@ -37,9 +43,11 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,   "Gaming")
+MIRYOKU_X(GAME,   "Gaming") \
+MIRYOKU_X(GAMENUM, "GNum")
 
 #define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_GAMENUM MIRYOKU_MAPPING
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -52,3 +60,4 @@ MIRYOKU_X(GAME,   "Gaming")
 #define U_SYM    8
 #define U_FUN    9
 #define U_GAME   10
+#define U_GAMENUM 11
