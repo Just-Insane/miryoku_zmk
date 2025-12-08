@@ -138,11 +138,13 @@ CONFIG_ZMK_PM_SOFT_OFF=y
 This section contains more information on building the ~.uf2~ files that are flashed to the micro-controllers.
 
 #+BEGIN_QUOTE
-NOTE: If running on ~EvieMacStudio~, the ZMK Build Environment is already setup, however, instructions can be found in [[file:readme.org::*Local Builds][readme.org:Local Builds]], if needed.
+NOTE: If running on ~EvieMacStudio~, the ZMK Build Environment is already setup, however, instructions can be found in [[file:readme.org::*Local Builds][readme.org:Local Builds]], if needed. Alternatively, run the blow source in org-mode.
 #+END_QUOTE
 
 #+name: Local Builds
-#+begin_src  zsh
+#+begin_src shell :results none :tangle no
+cd ~/git/zmk
+source .venv/bin/activate
 cd ~/git/zmk/app
 west build -d build/left -b nice_nano_v2 -- -DSHIELD=kyria_rev2_left -DZMK_CONFIG="/Users/evie/git/miryoku_zmk/config" # Outputs to ~/git/zmk/app/build/left
 west build -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_rev2_right -DZMK_CONFIG="/Users/evie/git/miryoku_zmk/config" # Outputs to ~/git/zmk/app/build/right
