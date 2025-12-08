@@ -138,7 +138,7 @@ CONFIG_ZMK_PM_SOFT_OFF=y
 This section contains more information on building the ~.uf2~ files that are flashed to the micro-controllers.
 
 #+BEGIN_QUOTE
-NOTE: If running on EvieMacStudio, the ZMK Build Environment is already setup, however, instructions can be found in [[readme.org]], if needed.
+NOTE: If running on EvieMacStudio, the ZMK Build Environment is already setup, however, instructions can be found in [[file:readme.org::*Local Builds][Local Builds]], if needed.
 #+END_QUOTE
 
 #+name: Local Builds
@@ -152,6 +152,6 @@ west build -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_rev2_right -DZMK_CON
 
 Once the ~.uf2~ files have been generated, they can be flashed by doing the following:
 
-1. Open ~Finder.app~ and go to ~'~~/git/zmk/app/build/[left/right]/zephyr'~
+1. Open ~Finder.app~ and go to ~'~/git/zmk/app/build/[left/right]/zephyr'~
 2. Double click the power button on the keyboard half to flash
 3. Copy the corresponding ~.uf2~ (left/right) file to the device shown in ~Finder.app~
