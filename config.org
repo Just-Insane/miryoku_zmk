@@ -152,6 +152,6 @@ west build -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_rev2_right -DZMK_CON
 
 Once the ~.uf2~ files have been generated, they can be flashed by doing the following:
 
-1. Open ~Finder.app~ and go to ~~/git/zmk/app/build/[left/right]/zephyr~
+1. Open ~Finder.app~ and go to src_language[:exports code]{~/git/zmk/app/build/[left/right]/zephyr}
 2. Double click the power button on the keyboard half to flash
-3. Copy the corresponding ~.uf2~ (left/right) file to the device show in ~Finder.app~
+3. Copy the corresponding ~.uf2~ (left/right) file to the device shown in ~Finder.app~
