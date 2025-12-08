@@ -1,5 +1,4 @@
-// Copyright 2021 Manna Harbour
-// https://github.com/manna-harbour/miryoku
+// ZMK Custom Config
 
 #define MIRYOKU_KLUDGE_SOFT_OFF
 #define MIRYOKU_ALPHAS_QWERTY
@@ -8,6 +7,7 @@
 #define XXX &none
 
 // FPS friendly tap layer
+// This config is lifted from https://github.com/mnivoliez/miryoku_zmk/blob/master/miryoku/custom_config.h
 #define MIRYOKU_LAYER_GAME \
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp LSHFT,         &kp A,             &kp S,             &kp D,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
