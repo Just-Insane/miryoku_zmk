@@ -43,7 +43,7 @@ Clone this repository and set [[https://zmk.dev/docs/development/build-flash#bui
 
 **** Note to Self
 
-Local builds are done via the CLI, from the `~/git/zmk/app` folder, with the following commands:
+Local builds are done via the CLI, from the ~~/git/zmk/app~ folder, with the following commands:
 
 #+begin_src 
 cd ~/git/zmk/app
@@ -51,9 +51,9 @@ west build -d build/left -b nice_nano_v2 -- -DSHIELD=kyria_rev2_left -DZMK_CONFI
 west build -d build/right -b nice_nano_v2 -- -DSHIELD=kyria_rev2_right -DZMK_CONFIG="/Users/evie/git/miryoku_zmk/config" # Outputs to ~/git/zmk/app/build/right
 #+end_src
 
-Once the files have been output, double press the power button on each half to put them in update mode, then copy `~/git/zmk/app/build/[left/right]/zephyr/zmk.uf2` into the mounted drives.
+Once the files have been output, double press the power button on each half to put them in update mode, then copy ~~/git/zmk/app/build/[left/right]/zephyr/zmk.uf2~ into the mounted drives.
 
-Changes are done by updating the various files in `~/git/miryoku_zmk`, as described in the rest of the README. 
+Changes are done by updating the various files in ~~/git/miryoku_zmk~, as described in the rest of the README. 
 
 *** Workflow Builds
 
