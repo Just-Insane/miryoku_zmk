@@ -84,7 +84,7 @@ These files contain the kconfig options for Zephyr (ZMK).
 Left side of the split keyboard, needed due to right side not supporting WPM reporting.
 
 #+name: kyria_rev2_left
-#+begin_src text :tangle config/kyria_rev2_left.conf
+#+begin_src shell :tangle config/kyria_rev2_left.conf
 # Display config
 CONFIG_ZMK_DISPLAY=y
 CONFIG_ZMK_DISPLAY_BLANK_ON_IDLE=y
@@ -112,7 +112,7 @@ CONFIG_ZMK_PM_SOFT_OFF=y
 Right side of the keyboard, note that WPM config is removed.
 
 #+name: kyria_rev2_right
-#+begin_src text :tangle config/kyria_rev2_right.conf
+#+begin_src shell :tangle config/kyria_rev2_right.conf
 # Display config
 CONFIG_ZMK_DISPLAY=y
 CONFIG_ZMK_DISPLAY_BLANK_ON_IDLE=y
